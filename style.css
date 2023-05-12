@@ -34,7 +34,6 @@ html {
 
 section {
     padding: 2rem 9%;
-    height: 100vh;
 }
 
 .heading {
@@ -47,7 +46,7 @@ section {
 .Home .heading {
     color: var(--white);
     border-radius: .5rem;
-    padding: 0 1.5rem;  
+    padding: 0 1.5rem 2rem;  
 }
 
 .btn {
@@ -117,7 +116,7 @@ section {
 .Services .heading {
     color: var(--black);
     border-radius: .5rem;
-    padding: 0 1.5rem;  
+    padding: 0 1.5rem 2rem;  
 }
 
 .Services .box-container {
@@ -161,7 +160,7 @@ section {
 .About .heading {
     color: var(--white);
     border-radius: .5rem;
-    padding: 0 1.5rem;  
+    padding: 0 1.5rem 2rem;  
 }
 
 .About .row {
@@ -234,7 +233,7 @@ section {
 .Portfolio .heading {
     color: var(--black);
     border-radius: .5rem;
-    padding: 0 1.5rem;  
+    padding: 0 1.5rem 2rem;  
 }
 
 .Portfolio .box-container {
@@ -251,7 +250,7 @@ section {
     box-shadow: var(--box-shadow);
 }
 
-.Portfolio .box-container .box img {
+.Portfolio .box-container .box iframe {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -297,7 +296,7 @@ section {
 }
 
 .Portfolio .box-container .box::before {
-    height: 100%;
+    height: 0;
     width: 100%;
     content: '';
     position: absolute;
@@ -319,7 +318,7 @@ section {
 .Pricing .heading {
     color: var(--white);
     border-radius: .5rem;
-    padding: 0 1.5rem;  
+    padding: 0 1.5rem 2rem;  
 }
 
 .Pricing .box-container {
@@ -385,7 +384,7 @@ section {
 .Review .heading {
     color: var(--black);
     border-radius: .5rem;
-    padding: 0 1.5rem;  
+    padding: 0 1.5rem 2rem;  
 }
 
 .Review .box-container {
@@ -449,7 +448,7 @@ section {
 .Reco .heading {
     color: var(--white);
     border-radius: .5rem;
-    padding: 0 1.5rem;  
+    padding: 0 1.5rem 2rem;  
 }
 
 .Reco .box-container {
@@ -513,7 +512,7 @@ section {
 .Contactsp .heading {
     color: var(--black);
     border-radius: .5rem;
-    padding: 0 1.5rem;  
+    padding: 0 1.5rem 2rem;  
 }
 
 .Contact .icons-container {
@@ -668,16 +667,17 @@ section {
 
 .Home {
     display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
     gap: 1.5rem;
     padding-top: 10rem;
+    padding-bottom: 5rem;
     position: relative;
     background: var(--black);
 }
 
 .Home .content {
+    padding-top: 5%;
     flex: 1 1 45rem;
+
 }
 
 .Home .image {
@@ -686,6 +686,8 @@ section {
 
 .Home .image img {
     width: 100%;
+    border-style: hidden;
+    border-radius: 2rem;
 }
 
 .Home .content h3 {
